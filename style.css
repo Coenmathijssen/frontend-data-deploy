@@ -1,0 +1,239 @@
+body {
+  margin: 0px;
+}
+
+.opening-title {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 40px;
+  text-align: center;
+}
+
+.opening-subtitle {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+
+.sphere {
+  fill: #B0E0E6;
+}
+
+.country {
+  fill: #FF7373;
+  stroke: black;
+  stroke-opacity: 0.1;
+}
+
+svg {
+  width: 960px;
+  height: 500px;
+  overflow: visible;
+}
+
+.rectangle {
+  fill: #B0E0E6;
+}
+
+.item-container {
+  fill: white;
+  stroke: black;
+  stroke-width: 1;
+  width: 200px;
+}
+
+.data-point {
+  border: solid 1px white;
+  border-radius: 50%;
+  stroke: black;
+  stroke-width: 1;
+  fill: white;
+  opacity: 0.6;
+  transition: all .2s ease-in-out;
+}
+
+.data-point:hover {
+  cursor: pointer;
+}
+
+.square-active {
+  width: 200px;
+  height: 200px;
+  border-radius: 8px;
+  opacity: 0.9;
+  transition: all .2s ease-in-out;
+}
+
+.title {
+  width: 180px;
+  height: 50px;
+  visibility: hidden;
+  opacity: 0;
+  font-size: 1em;
+  font-family: lato, arial, sans-serif;
+  font-weight: bold;
+}
+
+.title.title-active {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity .2s ease-in-out 0.7s;
+}
+
+.img {
+  width: 160px;
+  height: 130px;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.img.img-active {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity .2s ease-in-out 0.7s;
+}
+
+.close {
+  position: relative;
+  visibility: hidden;
+  opacity: 0;
+  fill: #468499;
+  stroke: black;
+  stroke-width: 1;
+  transition: opacity .2s ease-in-out  0.9s;
+  cursor: pointer;
+}
+
+.close-text {
+  visibility: hidden;
+  opacity: 0;
+  fill: white;
+  font-size: 24px;
+  font-family: lato, arial, sans-serif;
+  transition: opacity .2s ease-in-out 0.9s;
+  cursor: pointer;
+}
+
+.close.close-active {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity .2s ease-in-out 0.5s;
+}
+
+.close-text.close-active {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity .2s ease-in-out 0.5s;
+}
+
+div.tooltip {
+    position: absolute;
+    text-align: center;
+    padding: 1em;
+    font-family: lato, arial, sans-serif;
+    font-size: 14px;
+    background: #468499;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    pointer-events: none;
+}
+
+
+div.tooltip:after, div.tooltip:before {
+  right: 100%;
+  top: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+div.tooltip:after {
+  border-color: rgba(136, 183, 213, 0);
+  border-right-color: #468499;
+  border-width: 7px;
+  margin-top: -7px;
+}
+div.tooltip:before {
+  border-color: rgba(194, 225, 245, 0);
+  border-right-color: #468499;
+  border-width: 9px;
+  margin-top: -9px;
+}
+
+// WHEEL OF FORTUNE CSS
+.spinning-wheel-text {
+  font-size: 11px;
+  pointer-events:none;
+}
+
+#chart {
+  position: relatie;
+  width: 500px;
+  height: 380px;
+  top:0;
+  left:0;
+}
+
+#question {
+  position: absolute;
+  width: 400px;
+  height: 380px;
+  top: 170px;
+  left: 55%;
+}
+
+#question h1 {
+  font-size: 50px;
+  font-weight: bold;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  top: 39%;
+  -webkit-transform:translate(0,-50%);
+  transform:translate(0,-50%);
+}
+
+.slice {
+  stroke: black;
+  stroke-width: 2px;
+}
+
+.circle-middle {
+  fill: white;
+  stroke-width: 2px;
+  stroke: black;
+  cursor: pointer;
+}
+
+.spin-text {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/*.svg-container.second {
+  margin-top: -20vh;
+}*/
+
+.svg-container.first .spinning-wheel {
+    position: absolute;
+    left: 63%;
+    transform: translateX(-50%);
+}
+
+.spinning-wheel-text {
+  stroke-width: 0px;
+  font-family:Helvetica, Arial, sans-serif;
+}
+
+.svg-container.second {
+  display: flex;
+  justify-content: center;
+}
+
+
